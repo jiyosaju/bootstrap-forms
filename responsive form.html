@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <style>
+            h1{
+                color: aqua;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 10pxpx;
+                text-align: center;
+            }
+            h1::before{
+                content:"Responsive ";
+                
+            }
+            h1::first-letter{
+                color: red;
+            }
+            
+            body{
+                background-color: chartreuse;
+            }
+            input[type=text],[type=date],[type=submit],textarea,select{
+                border-radius:55px 20px;
+                border-top: 5px solid olivedrab;
+                border-right: 10px solid gold;
+                border-bottom: 8px solid olivedrab;
+                border-left: 3px solid gold;
+                margin-left: 40px;
+            }
+            label{
+                color: firebrick;
+                width: 100px;
+                display: inline-block;
+            
+            }
+            #submit{
+                margin-left: 130px;
+                width: 160px;
+            }
+            ::placeholder{
+              text-align: center;
+            }
+            @media screen and(min-width:500px) {
+                label{
+                    color: rgb(204, 178, 9);
+                }
+            }
+            #z{
+                font-size: 30px;
+                text-align: center;
+                color: crimson;
+            }
+
+        
+        </style>
+
+    </head>
+    <body>
+        <h1>form and psudo element</h1>
+        <div>
+            <form action="" method="post">
+                <label for="neme">NAME:</label>
+                  <input type="text" name="name" placeholder="Enter your name"><br><br>
+                  <label for="neme">ADDRESS:</label>
+                  <textarea name="address" id="add" cols="30" rows="5" placeholder="Enter address"></textarea><br><br>
+                  <label for="dob">DOB:</label>
+                  <input type="date" name="dob" ><br><br>
+                  <label for="gender">GENDER:</label>
+                  <label class="mf" for="male">male</label>
+                  <input type="radio" name="gender" value="male">
+                  <label class="mf" for="">feMale</label>
+                  <input type="radio" name="gender" value="female"><br><br>
+                  <label for="dept">DEGREE DEPARTMENT:</label>
+                  <select name="dept" >
+                    <option value="BCOM" >BCOM</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BBA">BBA</option>
+                    <option value="BSC">BSC</option>
+                    <option value="OTHER">OTHER</option>
+                    </select><br><br>
+                    <input id="submit" type="submit" value="SUBMIT">
+                    <div id="mymodal" class="modal">
+                    <div>
+                        <span class="close">&times;</span>
+                        <p id="z">submitted succesfully</p>
+                    </div>
+        </div>
+        <script>
+            var modal=document.getElementById("mymodal");
+            var btn=document.getElementById("submit");
+            var span=document.getElementsByClassName("close")[0];
+            btn.onclick=function(){
+                modal.style.display="block";
+            }
+            span.onclick=function() {
+                modal.style.display="none";
+            }
+            window.onclick=function(){
+                if(event.target==modal){
+
+                }
+            }
+        </script>
+    </body>
+</html>
