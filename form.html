@@ -1,0 +1,139 @@
+
+<html>
+    <head>
+        <style>
+label{
+    color: gold;
+    width: 140px;
+    display: inline-block;
+    margin: 0.2cm;
+    font-weight:bold;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.mf{
+    color: gold;
+    width: 50px;
+}
+input{
+   padding: 4px;
+   margin: 5px;
+   font-size: 16px;
+   border-radius: 15px;
+   border: 5px solid   darkturquoise;
+}
+textarea{
+    padding: 4px;
+   margin: 5px;
+   font-size: 16px;
+   border-radius: 15px;
+   border: 5px solid  darkturquoise;
+}
+select{
+    padding: 4px;
+   margin: 5px;
+   font-size: 16px;
+   border-radius: 10px;
+   border: 5px solid darkturquoise ;
+}
+#s{
+    margin-top: 7px;
+    margin-left: 200px;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    padding: 4px;
+    background-color: rgb(162, 123, 183);
+    
+    
+}
+#s:hover{
+        background-color: darkgreen;
+}
+h1{
+    text-align: center;
+    color:chartreuse;
+    font-style:italic ;
+    text-decoration: dashed;
+
+    
+
+}
+body{
+    background-color: lightgoldenrodyellow;
+}
+div{
+    margin-left: 250px;
+}
+@media screen and(max-width:100px) {
+    div{
+        width: 400px;
+        height: 500px;
+    }
+}
+
+
+        </style>
+
+    </head>
+    <body>
+              <h1>REGISTRATION FORM </h1>
+            <div>
+             <form action="submit.html" method="post">
+                <label for="neme">NAME:</label>
+                  <input type="text" name="name" placeholder="Enter your name"><br><br>
+                  <label for="neme">ADDRESS:</label>
+                  <textarea name="address" id="add" cols="30" rows="5" placeholder="Enter address"></textarea><br><br>
+                  <label for="dob">DOB:</label>
+                  <input type="date" name="dob" ><br><br>
+                  <label for="gender">GENDER:</label>
+                  <label class="mf" for="male">male</label>
+                  <input type="radio" name="gender" value="male">
+                  <label class="mf" for="">feMale</label>
+                  <input type="radio" name="gender" value="female"><br><br>
+                  <label for="name">FATHER NAME:</label>
+                  <input type="text" name="name" placeholder="Enter your father name"><br><br>
+                  <label for="name">MOTHER NAME:</label>
+                  <input type="text" name="name" placeholder="Enter your mother name"><br><br>
+                  <label for="num">PHONE NUMBER:</label>
+                  <input type="number" name="num" placeholder="Enter your phone number" ><br><br>
+                  <label for="email">EMAIL:</label>
+                  <input type="email" name="email" placeholder="enter your email"><br><br>
+                  <label for="edu">EDUCATION:</label>
+                  <label class="mf" for="H">sslc</label>
+                  <input type="checkbox" name="h" >
+                  <label class="mf" for="H">+2</label>
+                  <input type="checkbox" name="h" >
+                  <label class="mf" for="H">degree</label>
+                  <input type="checkbox" name="h" >
+                  <label class="mf" for="H">pg</label>
+                  <input type="checkbox" name="h" ><br><br>
+                  <label for="dept">DEGREE DEPARTMENT:</label>
+                  <select name="dept" >
+                  <option value="BCOM" >BCOM</option>
+                  <option value="BCA">BCA</option>
+                  <option value="BBA">BBA</option>
+                  <option value="BSC">BSC</option>
+                  <option value="OTHER">OTHER</option>
+                  </select><br><br>
+                  <label for="dept">PG DEPARTMENT:</label>
+                  <select name="dept" >
+                  <option value="mCOM" >MCOM</option>
+                  <option value="mCA">MCA</option>
+                  <option value="mBA">MBA</option>
+                  <option value="mSC">MSC</option>
+                  <option value="OTHER">OTHER</option>
+                  </select><br><br>
+                  <label for="file">UPLOAD YOUR CERTTIFICATES:</label>
+                  <input type="file" name="file" ><br><br>
+                  <label for="file">UPLOAD YOUR BIODATA:</label>
+                  <input type="file" name="file" ><br><br>
+                  
+                    <input type="submit" value="SUBMIT" id="s">
+                  
+                
+                  
+                 </form>
+                 </div>
+        </body>
+        </html>
