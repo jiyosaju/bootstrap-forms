@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <title>WELCOME TABLE AND FORM</title>
+        
+    </head>
+    <body >
+        <h1>TABLE CREATION</h1>
+        <table>
+            <tr>
+                <th colspan="2" >NAME   </th>
+                <th>ADDRESS</th>
+                
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td rowspan="2">4</td>
+                <td>5</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+                <td rowspan="2">11</td>
+            </tr>
+            <tr>
+                
+                <td>11</td>
+                <td>12</td>
+            </tr>
+           
+        </table>
+        <br>
+        <br>
+             <h1>REGISTRATION FORM</h1>
+             <form action="submit.html" method="post">
+                <label for="neme">NAME:</label>
+                  <input type="text" name="name" placeholder="Enter your name"><br><br>
+                  <label for="neme">ADDRESS:</label>
+                  <textarea name="address" id="add" cols="30" rows="5" placeholder="Enter address"></textarea><br><br>
+                  <label for="dob">DOB:</label>
+                  <input type="date" name="dob" ><br><br>
+                  <label for="gender">GENDER:</label>
+                  <label class="mf" for="male">male</label>
+                  <input type="radio" name="gender" value="male">
+                  <label class="mf" for="">feMale</label>
+                  <input type="radio" name="gender" value="female"><br><br>
+                  <label for="name">FATHER NAME:</label>
+                  <input type="text" name="name" placeholder="Enter your father name"><br><br>
+                  <label for="name">MOTHER NAME:</label>
+                  <input type="text" name="name" placeholder="Enter your mother name"><br><br>
+                  <label for="num">PHONE NUMBER:</label>
+                  <input type="number" name="num" placeholder="Enter your phone number" ><br><br>
+                  <label for="email">EMAIL:</label>
+                  <input type="email" name="email" placeholder="enter your email"><br><br>
+                  <label for="edu">EDUCATION:</label>
+                  <label class="mf" for="H">sslc</label>
+                  <input type="checkbox" name="h" >
+                  <label class="mf" for="H">+2</label>
+                  <input type="checkbox" name="h" >
+                  <label class="mf" for="H">degree</label>
+                  <input type="checkbox" name="h" >
+                  <label class="mf" for="H">pg</label>
+                  <input type="checkbox" name="h" ><br><br>
+                  <label for="dept">DEGREE DEPARTMENT:</label>
+                  <select name="dept" >
+                  <option value="BCOM" >BCOM</option>
+                  <option value="BCA">BCA</option>
+                  <option value="BBA">BBA</option>
+                  <option value="BSC">BSC</option>
+                  <option value="OTHER">OTHER</option>
+                  </select><br><br>
+                  <label for="dept">PG DEPARTMENT:</label>
+                  <select name="dept" >
+                  <option value="mCOM" >MCOM</option>
+                  <option value="mCA">MCA</option>
+                  <option value="mBA">MBA</option>
+                  <option value="mSC">MSC</option>
+                  <option value="OTHER">OTHER</option>
+                  </select><br><br>
+                  <label for="file">UPLOAD YOUR CERTTIFICATES:</label>
+                  <input type="file" name="file" ><br><br>
+                  <label for="file">UPLOAD YOUR BIODATA:</label>
+                  <input type="file" name="file" ><br><br>
+                  
+                    <input type="submit" value="SUBMIT" id="s">
+                  
+                
+                  
+             </form>
+        <style>
+label{
+    color: cyan;
+    width: 140px;
+    display: inline-block;
+    margin: 0.2cm;
+    font-weight: bold;
+    font-size: 16px;
+}
+.mf{
+    color: gold;
+    width: 50px;
+}
+input{
+   padding: 4px;
+   margin: 5px;
+   font-size: 16px;
+   border-radius: 10px;
+   border: 5px solid olive;
+}
+textarea{
+    padding: 4px;
+   margin: 5px;
+   font-size: 16px;
+   border-radius: 10px;
+   border: 5px solid olive;
+}
+select{
+    padding: 4px;
+   margin: 5px;
+   font-size: 16px;
+   border-radius: 10px;
+   border: 5px solid olive;
+}
+#s{
+    margin-top: 7px;
+    margin-left: 200px;
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    padding: 4px;
+    background-color: darkslategray;
+    
+}
+
+table,th,td{
+    border: 10px solid chartreuse;
+      width: 700px;
+      height: 50px;
+      border-collapse: collapse;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      color: darkorange;
+      text-align: center;
+}
+body{
+      background-color: black;
+}
+h1{
+    text-align: center;
+    color: red;
+    font-style:italic ;
+    text-decoration-line:underline ;
+    text-decoration-color:blue ;
+}
+
+    </style>
+    </body>
+    
+</html>
